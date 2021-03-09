@@ -46,9 +46,9 @@
                 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
-              <li class="active"><a href="index.html">INÍCIO</a></li>
+              <li class="active"><a href=".">INÍCIO</a></li>
               <li><a href="#about">SOBRE A EMPRESA</a></li>
-              <li><a href="/login.php">2º VIA DE BOLETO</a></li>                          
+              <li><a href="login.php">2º VIA DE BOLETO</a></li>                          
               <li><a href="#contact">CONTATO</a></li>
               <li class="drop-down"><a href="#">Vídeos</a>
                 <ul>
