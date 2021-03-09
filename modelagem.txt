@@ -1,0 +1,3 @@
+usuario(id, nome, email, login, senha, nivel)
+cliente(id, nome, cnpj, endereco)
+boleto(id, id_cliente, vencimento, valor, arquivo, status)
