@@ -51,7 +51,11 @@ class MainIndex{
         $adminTemplate = new SBTemplate();
         $adminTemplate->head();
         $adminTemplate->sideBar();
-        $adminTemplate->content();
+        $adminTemplate->wapperOpen();
+        $adminTemplate->topBar();
+//         $adminTemplate->content();
+        $this->contentAdmin();
+        $adminTemplate->wapperClose();
         $adminTemplate->footer();
         
     }
@@ -522,16 +526,13 @@ class MainIndex{
                     $controller = new ClienteCustomController();
                     $controller->main();
                     break;
-                case 'usuario':
-                    $controller = new UsuarioCustomController();
-                    $controller->main();
-                    break;
+
                 default:
                     echo '<p>Página solicitada não encontrada.</p>';
                     break;
             }
         }else{
-            $controller = new UsuarioCustomController();
+            $controller = new ClienteCustomController();
             $controller->main();
         }
     }
