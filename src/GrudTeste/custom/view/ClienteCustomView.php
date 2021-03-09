@@ -35,13 +35,15 @@ class ClienteCustomView extends ClienteView {
 					<tr>
 						<th>id</th>
 						<th>Download</th>
-						
+						<th>Vencimento</th>
+
 					</tr>
 				</thead>
 				<tfoot>
 					<tr>
                         <th>id</th>
                         <th>Download</th>
+                        <th>Vencimento</th>
                         
 					</tr>
 				</tfoot>
@@ -51,6 +53,7 @@ class ClienteCustomView extends ClienteView {
             echo '<tr>';
             echo '<td>'.$element->getId().'</td>';
             echo '<td><a href="'.$element->getArquivo().'">Download</a></td>';
+            echo '<td>'.date("d/m/Y", strtotime($element->getVencimento())).'</td>';
             
         }
         
