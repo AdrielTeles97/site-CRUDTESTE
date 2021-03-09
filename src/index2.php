@@ -1,5 +1,7 @@
 <?php
             
+use GrudTeste\custom\controller\MainIndex;
+
 define("DB_INI", "../grud_teste_db.ini");
 define("API_INI", "../grud_teste_api_rest.ini");
              
@@ -20,31 +22,9 @@ function autoload($classe) {
 }
 spl_autoload_register('autoload');
 
-use GrudTeste\custom\controller\BoletoCustomController;
-use GrudTeste\custom\controller\ClienteCustomController;
-use GrudTeste\custom\controller\UsuarioCustomController;
-if(isset($_GET['ajax'])){
-    switch ($_GET['ajax']){
-		case 'boleto':
-            $controller = new BoletoCustomController();
-		    $controller->mainAjax();
-			break;
-		case 'cliente':
-            $controller = new ClienteCustomController();
-		    $controller->mainAjax();
-			break;
-		case 'usuario':
-            $controller = new UsuarioCustomController();
-		    $controller->mainAjax();
-			break;
-        default:
-            echo '<p>Página solicitada não encontrada.</p>';
-            break;
-    }
+$controller = new MainIndex();
+$controller->main();
 
-    exit(0);
-}
-                     
        
 ?>
             
@@ -86,28 +66,7 @@ if(isset($_GET['ajax'])){
             
             
 <?php
-if(isset($_GET['page'])){
-	switch ($_GET['page']){
-    	case 'boleto':
-            $controller = new BoletoCustomController();
-    	    $controller->main();
-    		break;
-    	case 'cliente':
-            $controller = new ClienteCustomController();
-    	    $controller->main();
-    		break;
-    	case 'usuario':
-            $controller = new UsuarioCustomController();
-    	    $controller->main();
-    		break;
-		default:
-			echo '<p>Página solicitada não encontrada.</p>';
-			break;
-	}
-}else{
-    $controller = new UsuarioCustomController();
-	$controller->main();
-}
+
 					    
 ?>
             
