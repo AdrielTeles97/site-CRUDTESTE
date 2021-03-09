@@ -42,8 +42,6 @@
         <div class="col-xl-11 d-flex align-items-center">                            
             <a href="index.html" class="logo mr-auto" id="sombra"><img src="imagens/logo-250.png" alt="LOGO BEL INFORMÁTICA"class="img-fluid"></a>
                 
-          </h1>  
-                
           <nav class="nav-menu d-none d-lg-block">
             <ul>
               <li class="active"><a href=".">INÍCIO</a></li>
@@ -62,7 +60,6 @@
         </div>
       </div>
 
-    </div>
   </header><!-- FIM CABEÇALHO -->
 
   <!-- ======= SEÇÃO INICIAL ======= -->
@@ -87,11 +84,11 @@
           </div>
       </div>
     </div>
+    </div>
   </section><!-- FIM SEÇÃO INICIAL -->
 
   <main id="main">
-      </div>
-    </section><!-- FIM SEÇÃO DE SERVIÇOS -->
+
 
     <!-- ======= SOBRE A EMPRESA SEÇÃO ======= -->
     <section id="about">
@@ -104,7 +101,7 @@
 
         <div class="row about-cols">
 
-       
+       </div>
       </div>
     </section><!-- FIM SEÇÃO SOBRE A EMPRESA -->
 
