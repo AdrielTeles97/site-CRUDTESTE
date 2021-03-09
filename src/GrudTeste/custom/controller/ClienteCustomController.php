@@ -18,7 +18,15 @@ class ClienteCustomController  extends ClienteController {
 		$this->view = new ClienteCustomView();
 	}
 
-
-	        
+	
+	public function mainComum(){
+	    
+	    if (isset($_GET['select'])){
+	        echo '<div class="row">';
+	        $this->select();
+	        echo '</div>';
+	        return;
+	    }
+	}
 }
 ?>

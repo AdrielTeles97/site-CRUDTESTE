@@ -222,10 +222,15 @@ class ClienteController {
 	        return;
 	    }
         $selected = new Cliente();
-	    $selected->setId($_GET['select']);
+	    $selected->setCnpj($_GET['select']);
 	        
-        $this->dao->fillById($selected);
-
+        $lista = $this->dao->fetchByCnpj($selected);
+        if(count($lista) == 0){
+            echo "CLiente não localizado";
+            return;
+        }
+        $selected = $lista[0];
+        
         echo '<div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">';
 	    $this->view->showSelected($selected);
         echo '</div>';

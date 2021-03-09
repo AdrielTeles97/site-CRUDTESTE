@@ -1,3 +1,13 @@
+<?php 
+
+namespace GrudTeste\custom\view;
+
+class SBTemplate{
+    
+    public function head(){
+        
+        echo '
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +19,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Border Utilities</title>
+    <title>SB Admin 2 - Blank</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -23,127 +33,17 @@
 </head>
 
 <body id="page-top">
-
-    <!-- Page Wrapper -->
+<!-- Page Wrapper -->
     <div id="wrapper">
 
-        <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        
+';
+        
+    }
+    
+    public function content(){
+        echo '
 
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
-            </a>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
-
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Interface
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item active">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Utilities</span>
-                </a>
-                <div id="collapseUtilities" class="collapse show" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item active" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Addons
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
-                </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
-
-        </ul>
-        <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -244,7 +144,7 @@
                                     </div>
                                     <div>
                                         <div class="small text-gray-500">December 2, 2019</div>
-                                        Spending Alert: We've noticed unusually high spending for your account.
+                                        Spending Alert: We\'ve noticed unusually high spending for your account.
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
@@ -273,7 +173,7 @@
                                     </div>
                                     <div class="font-weight-bold">
                                         <div class="text-truncate">Hi there! I am wondering if you can help me with a
-                                            problem I've been having.</div>
+                                            problem I\'ve been having.</div>
                                         <div class="small text-gray-500">Emily Fowler · 58m</div>
                                     </div>
                                 </a>
@@ -296,7 +196,7 @@
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
-                                        <div class="text-truncate">Last month's report looks great, I am very happy with
+                                        <div class="text-truncate">Last month\'s report looks great, I am very happy with
                                             the progress so far, keep up the good work!</div>
                                         <div class="small text-gray-500">Morgan Alvarez · 2d</div>
                                     </div>
@@ -309,7 +209,7 @@
                                     </div>
                                     <div>
                                         <div class="text-truncate">Am I a good boy? The reason I ask is because someone
-                                            told me that people say this to all dogs, even if they aren't good...</div>
+                                            told me that people say this to all dogs, even if they aren\'t good...</div>
                                         <div class="small text-gray-500">Chicken the Dog · 2w</div>
                                     </div>
                                 </a>
@@ -359,116 +259,143 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-1 text-gray-800">Border Utilities</h1>
-                    <p class="mb-4">Bootstrap's default utility classes can be found on the official <a
-                            href="https://getbootstrap.com/docs">Bootstrap Documentation</a> page. The custom utilities
-                        below were created to extend this theme past the default utility classes built into Bootstrap's
-                        framework.</p>
-
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Border Left Utilities -->
-                        <div class="col-lg-6">
-
-                            <div class="card mb-4 py-3 border-left-primary">
-                                <div class="card-body">
-                                    .border-left-primary
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-left-secondary">
-                                <div class="card-body">
-                                    .border-left-secondary
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-left-success">
-                                <div class="card-body">
-                                    .border-left-success
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-left-info">
-                                <div class="card-body">
-                                    .border-left-info
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-left-warning">
-                                <div class="card-body">
-                                    .border-left-warning
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-left-danger">
-                                <div class="card-body">
-                                    .border-left-danger
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-left-dark">
-                                <div class="card-body">
-                                    .border-left-dark
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- Border Bottom Utilities -->
-                        <div class="col-lg-6">
-
-                            <div class="card mb-4 py-3 border-bottom-primary">
-                                <div class="card-body">
-                                    .border-bottom-primary
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-bottom-secondary">
-                                <div class="card-body">
-                                    .border-bottom-secondary
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-bottom-success">
-                                <div class="card-body">
-                                    .border-bottom-success
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-bottom-info">
-                                <div class="card-body">
-                                    .border-bottom-info
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-bottom-warning">
-                                <div class="card-body">
-                                    .border-bottom-warning
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-bottom-danger">
-                                <div class="card-body">
-                                    .border-bottom-danger
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-bottom-dark">
-                                <div class="card-body">
-                                    .border-bottom-dark
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
+                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
 
                 </div>
                 <!-- /.container-fluid -->
 
             </div>
             <!-- End of Main Content -->
+
+';
+    }
+    public function sideBar(){
+        echo '
+<!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Interface
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Cliente</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Adicionar :</h6>
+                        <a class="collapse-item" href="buttons.html">Buttons</a>
+                        <a class="collapse-item" href="cards.html">Cards</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Utilities</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Utilities:</h6>
+                        <a class="collapse-item" href="utilities-color.html">Colors</a>
+                        <a class="collapse-item" href="utilities-border.html">Borders</a>
+                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Addons
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
+                    aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
+                <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Login Screens:</h6>
+                        <a class="collapse-item" href="login.html">Login</a>
+                        <a class="collapse-item" href="register.html">Register</a>
+                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Other Pages:</h6>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                        <a class="collapse-item active" href="blank.html">Blank Page</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Charts</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tables</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+';
+    }
+
+    
+    public function footer(){
+        echo '
 
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
@@ -524,3 +451,18 @@
 </body>
 
 </html>
+
+';
+        
+        
+    }
+
+    
+    
+    
+}
+
+
+
+
+?>
