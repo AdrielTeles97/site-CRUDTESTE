@@ -8,12 +8,69 @@
 
 namespace GrudTeste\custom\view;
 use GrudTeste\view\ClienteView;
+use GrudTeste\model\Cliente;
 
 
 class ClienteCustomView extends ClienteView {
 
     ////////Digite seu código customizado aqui.
     
+    
+    
+    public function showBoletos(Cliente $cliente){
+        echo '
+            
+    	<div class="card o-hidden border-0 shadow-lg">
+              <div class="card">
+                <div class="card-header">
+                  Boleto do Cliente
+                </div>
+                <div class="card-body">
+            
+            
+		<div class="table-responsive">
+			<table class="table table-bordered" id="dataTable" width="100%"
+				cellspacing="0">
+				<thead>
+					<tr>
+						<th>id</th>
+						<th>Download</th>
+						
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+                        <th>id</th>
+                        <th>Download</th>
+                        
+					</tr>
+				</tfoot>
+				<tbody>';
+        
+        foreach($cliente->getBoletos() as $element){
+            echo '<tr>';
+            echo '<td>'.$element->getId().'</td>';
+            echo '<td><a href="'.$element->getArquivo().'">Download</a></td>';
+            
+        }
+        
+        echo '
+				</tbody>
+			</table>
+		</div>
+            
+            
+            
+            
+      </div>
+  </div>
+</div>
+            
+            
+            
+        ';
+        
+    }
     
     public function showList($lista){
         echo '

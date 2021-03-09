@@ -80,8 +80,19 @@ class MainIndex{
                     echo '<META HTTP-EQUIV="REFRESH" CONTENT="0; URL=.">';
                     return;
                 }
+                $adminTemplate = new SBTemplate();
+                $adminTemplate->head();
+                $adminTemplate->sideBarComum();
+                $adminTemplate->wapperOpen();
+                $adminTemplate->topBar();
+                
                 $controller = new ClienteCustomController();
                 $controller->main();
+                
+                $adminTemplate->wapperClose();
+                $adminTemplate->footer();
+                
+                
             }
             
         }
